@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Secrets / local config — NEVER commit these
+.env
+.env.*
+*.local
+secrets/
+*.pem
+*.key
+
+# Build / output
+dist/
+build/
+coverage/
+
+# Local data / agent state
+data/
+*.db
+*.sqlite
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
