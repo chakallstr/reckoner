@@ -25,3 +25,13 @@ data/
 .idea/
 .vscode/
 *.swp
+
+# Ruflo MCP scratch artifacts (never commit)
+*.rvf
+*.rvf.lock
+ruvector.db
+agentdb.rvf
+
+# Private build plans / design docs — kept local, NOT in the public skeleton
+# (they reference the private downstream agent + owner identities)
+docs/superpowers/
