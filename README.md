@@ -52,6 +52,17 @@ This agent touches **money**. Two non-negotiables baked into the design:
 
 `reckoner` is a generic scaffold and is **not affiliated with or specific to any payment system or provider.** No credentials, hosts, or operational details belong in this repository — keep those in your own private adapter implementations.
 
+## Quick start (shadow run)
+
+```bash
+npm install
+npm test           # full suite
+npm run example    # one shadow heartbeat over fake data — writes nothing
+```
+
+Implement the five adapters in `src/adapters.ts` for your own system, wire them
+the way `examples/shadow-run.ts` wires the stubs, and run it on a timer.
+
 ## License
 
 [MIT](./LICENSE) © chakallstr
